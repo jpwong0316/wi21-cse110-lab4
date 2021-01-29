@@ -8,9 +8,10 @@ let statistics = {
 };
 
 for (const car in statistics) {
-  if(car>"r") {
-    console.log('${statistics[car]}');
-  if(statistics[car]%2==1) {
-    console.log('${statistics[car]}');
+  if(car > "r") {
+    console.log(`${statistics[car]}`);
+  }
+  else if(statistics[car]%2==1) {
+    console.log(`${statistics[car]}`);
   }
 }
