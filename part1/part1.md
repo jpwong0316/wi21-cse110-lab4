@@ -80,3 +80,7 @@
     
 17. 'How are you?' will get printed. The first conditional is false because 2 == true is equivalent to 2 == 1 which is false. The second conditional looks
     false at first glance, but since 2 will get converted to a boolean value, Boolean(2) is actually true, so we print the statement 'How are you?'.
+
+19. \[6,8,10] is the result. In the loop of the modifyArray function, when pushing a new value to newArr, it will callback to doSomething with inputs array\[i]
+    and function(x). doSomething will add 2 to array\[i] and then callback to function(x), which performs the operation x\*2. This final result is then pushed to newArr.
+    For inputs \[1,2,3], we get results \[6,8,10] after the function finishes.
