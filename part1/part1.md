@@ -28,9 +28,13 @@
 
 13.
    A. student.name
+   
    B. student\['Grad Year']
+   
    C. student.greeting()
+   
    D. student\['Favorite Teacher'].name
+   
    E. student.courseLoad\[0]
 
 14.   
@@ -50,3 +54,16 @@
       numeric value of "3" is just 3 but the numeric value of undefined is NaN which makes 3 - NaN = NaN.
 
 15.
+   A. true is the output since comparisons between different types convert the values to numbers, and 2 > 1 is true.
+   B. false is the output because string comparisons compare character by character, and '2' < '1' is false.
+   C. true is the output because comparisons between different types convert the values to numbers, and 2 == 2 is true.
+   D. false is the output because === is a strict equality check that checks without type conversion, and the number 2 is not equal to the string 2.
+   E. false is the output because comparisons between different types convert the values to numbers. true is 1, and 1 == 2 is false.
+   F. true is the output because === is a strict equality check and Boolean(var) is true for any "non-empty" value of var. Thus, Boolean(2) is true and
+      true === true is true.
+      
+16. The difference between == and === operators is that == is a regular equality check and === is a strict equality check. The regular equality check, when
+    converting different types, will convert the values to numbers. This means something like 0 == false is true since false is numerically equivalent to 0.
+    The strict equality check will check equality without any type conversion, so 0 === false is false because 0 is a number and false is a boolean.
+    
+17. 
