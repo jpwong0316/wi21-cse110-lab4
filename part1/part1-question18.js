@@ -5,7 +5,7 @@ let statistics = {
   raceCars: 5,
   blackCars: 40,
   rareCars: 2  
-}
+};
 
 for (const car in statistics) {
   if(car>"r") {
