@@ -39,26 +39,38 @@
 
 14.   
    A. '32' is the output because '3' is treated as a string, so it interprets the '3'+2 as concatenating the string '3' and the string '2'.   
+   
    B. 1 is the output because even though '3' is interpreted as a string initially, subtraction can only be performed on two numbers, so it has to
       treat '3'-2 as the number 3 minus the number 2.   
+   
    C. 3 is the output because 3 is interpreted as a number, so that means that the + means addition rather than concatenation. As a result, the null
       must be interpreted numerically as well since addition is between two numbers, and the numeric value of null is 0.   
+   
    D. '3null' is the output because '3' is a string, so the + means concatenation rather than addition. Thus, the null is treated as a string as well,
       and the string value of null is just 'null'.   
+   
    E. 4 is the output. Since a boolean cannot be added to something else without being type converted, we know that true will have to convert into a
       different type. The value on the other side of the + sign is 3, so we convert true into a numeric value of 1, resulting in 1 + 3 = 4.   
+   
    F. 0 is the output. Although neither false nor null are strings or numbers, the compiler will assume addition over concatenation. Thus, false and null
       are converted to numbers, resulting in 0 + 0 = 0.   
+   
    G. "3undefined" is the output because "3" is a string so the + means concatenation rather than addition so undefined is string converted to "undefined".   
+   
    H. NaN is the output. The minus operation can only be used on numbers, so the compiler attempts to convert both "3" and undefined into numeric values. The
       numeric value of "3" is just 3 but the numeric value of undefined is NaN which makes 3 - NaN = NaN.
 
-15.
+15.  
    A. true is the output since comparisons between different types convert the values to numbers, and 2 > 1 is true.
+   
    B. false is the output because string comparisons compare character by character, and '2' < '1' is false.
+   
    C. true is the output because comparisons between different types convert the values to numbers, and 2 == 2 is true.
+   
    D. false is the output because === is a strict equality check that checks without type conversion, and the number 2 is not equal to the string 2.
+   
    E. false is the output because comparisons between different types convert the values to numbers. true is 1, and 1 == 2 is false.
+   
    F. true is the output because === is a strict equality check and Boolean(var) is true for any "non-empty" value of var. Thus, Boolean(2) is true and
       true === true is true.
       
