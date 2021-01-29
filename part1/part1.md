@@ -78,4 +78,5 @@
     converting different types, will convert the values to numbers. This means something like 0 == false is true since false is numerically equivalent to 0.
     The strict equality check will check equality without any type conversion, so 0 === false is false because 0 is a number and false is a boolean.
     
-17. 
+17. 'How are you?' will get printed. The first conditional is false because 2 == true is equivalent to 2 == 1 which is false. The second conditional looks
+    false at first glance, but since 2 will get converted to a boolean value, Boolean(2) is actually true, so we print the statement 'How are you?'.
