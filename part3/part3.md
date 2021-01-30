@@ -1,8 +1,9 @@
 ### **Debugging**
 
 The bug with part 1 of the website is that the numbers of the input are being stored as a string instead of a number.
-As a result, the result is "12" because it concatenates the strings "1" and "2".
+Thus, the result when 1 is input for num1 and 2 for num2 is the string "12" because it concatenates the strings "1" and "2".
 My fix for this bug was to use the function Number() to convert num1 and num2 to numbers instead of strings.
+The new result is 3 when num1 is 1 and num2 is 2.
 
 ### **Network**
 
