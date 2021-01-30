@@ -84,3 +84,6 @@
 19. \[6,8,10] is the result. In the loop of the modifyArray function, when pushing a new value to newArr, it will callback to doSomething with inputs array\[i]
     and function(x). doSomething will add 2 to array\[i] and then callback to function(x), which performs the operation x\*2. This final result is then pushed to newArr.
     For inputs \[1,2,3], we get results \[6,8,10] after the function finishes.
+
+21. The output is 1, 4, 3, 2. 1 and 4 are output first because they do not have a timeout set on them. Even though 3 has a timeout of 0 it still is output after
+    1 and 4 which do not have timeouts. 2 is printed out last because it has a 1000 ms timeout.
